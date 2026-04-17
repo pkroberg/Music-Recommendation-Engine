@@ -32,7 +32,7 @@ Sort list by d, write the (up to) top 20 songs to output file
 ## Error Handling
 
 - All errors from PA5 still apply
-- If argument -p is present for playlist generation throw an error in these cases:
+- If argument -s is present for playlist generation throw an error in these cases:
 	- Fewer than 5 arguments present
 	- K < 1
 	- Fewer user-provided songs than K
