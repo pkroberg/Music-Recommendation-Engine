@@ -4,14 +4,14 @@ A Java command-line tool that takes raw user song ratings and turns them into st
 
 ## My contribution
 
-This started as a course project (CS 214). The course provided the starting scaffold: the project layout, the Gradle and CI configuration, and the base CLI entry point. **I implemented all five analysis features** (`-a`, `-u`, `-p`, `-r`, `-s`) and the shared data and math utilities they use (`UserDataUtils`, `CsvUtils`).
+This started as a course project (CS 214). The course provided the starting scaffold: the project layout, the Gradle and CI configuration, and the base CLI entry point. I implemented all five analysis features (`-a`, `-u`, `-p`, `-r`, `-s`) and the shared data and math utilities they use (`UserDataUtils`, `CsvUtils`).
 
 ## Highlights
 
-- **I wrote the recommendation algorithms myself, without ML libraries:** per-user z-score normalization, user-similarity collaborative filtering, K-means clustering and inverse-distance ranking.
-- **The data runs through a multi-stage pipeline:** validate → clean → normalize → model → write CSV.
-- **Bad input fails with a clear error message:** unknown or duplicate songs, ratings outside 1–5, too few songs for the requested K, and missing files.
-- **The code grew over six iterations.** Each feature has its own runner class, and the math they share lives in one utility class.
+- Wrote the recommendation algorithms myself, without ML libraries: per-user z-score normalization, user-similarity collaborative filtering, K-means clustering and inverse-distance ranking.
+- The data runs through a multi-stage pipeline: validate → clean → normalize → model → write CSV.
+- Bad input fails with a clear error message: unknown or duplicate songs, ratings outside 1–5, too few songs for the requested K, and missing files.
+- Grew over six iterations. Each feature has its own runner class, and the math they share lives in one utility class.
 
 ## How it works
 
